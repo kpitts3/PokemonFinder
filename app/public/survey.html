@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Finder</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container surveyBody">
+
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h3>
+      <strong>Question 1</strong>
+    </h3>
+    <h4>What's your favorite color?</h4>
+    <select class="select" id="q1">
+      <option value=""></option>
+      <option value="1">Green</option>
+      <option value="2">Yellow</option>
+      <option value="3">Red or Orange</option>
+      <option value="4">Blue</option>
+      <option value="5">Black or Brown</option>
+    </select>
+
+    <h3>
+      <strong>Question 2</strong>
+    </h3>
+    <h4>What's your best quality?</h4>
+    <select class="select" id="q2">
+      <option value=""></option>
+      <option value="1">I am brave</option>
+      <option value="2">I like competition</option>
+      <option value="3">I am knowledgable and kind</option>
+      <option value="4">I am stealthy</option>
+      <option value="5">I am gentle yet I can be tough</option>
+    </select>
+
+    <h3>
+      <strong>Question 3</strong>
+    </h3>
+    <h4>What's your battling style?</h4>
+    <select class="select" id="q3">
+      <option value=""></option>
+      <option value="1">I go all out on power</option>
+      <option value="2">I strategize and execute my plan while I'm in total sync with my pokemon</option>
+      <option value="3">I come in with a stealthy, slow start, then quickly finish off my opponent.</option>
+      <option value="4">I carefully, and gracefully, attack.</option>
+      <option value="5">I just like to have fun and enjoy myself when I battle, but it doesn't hurt to win as well.</option>
+    </select>
+
+    <h3>
+      <strong>Question 4</strong>
+    </h3>
+    <h4>How do you want your Pokemon to look?</h4>
+    <select class="select" id="q4">
+      <option value=""></option>
+      <option value="1">Strong, yet gentle.</option>
+      <option value="2">Nice and unique.</option>
+      <option value="3">Quick and stealthy.</option>
+      <option value="4">Mysterious.</option>
+      <option value="5">Adorable.</option>
+    </select>
+
+    <h3>
+      <strong>Question 5</strong>
+    </h3>
+    <h4>What's your favorite type of Pokemon?</h4>
+    <select class="select" id="q5">
+      <option value=""></option>
+      <option value="1">Water</option>
+      <option value="2">Electric</option>
+      <option value="3">Grass</option>
+      <option value="4">Fire</option>
+      <option value="5">Rock</option>
+    </select>
+
+    <h3>
+      <strong>Question 6</strong>
+    </h3>
+    <h4>What would you do if you encountered your rival?</h4>
+    <select class="select" id="q6">
+      <option value=""></option>
+      <option value="1">Try our best.</option>
+      <option value="2">Battle him and beat him, of course!</option>
+      <option value="3">Play with them.</option>
+      <option value="4">Avoid eye contact.</option>
+      <option value="5">Offer them a snack.</option>
+    </select>
+
+    <h3>
+      <strong>Question 7</strong>
+    </h3>
+    <h4>You have just encountered a pokemon you haven't seen before, how would you react?</h4>
+    <select class="select" id="q7">
+      <option value=""></option>
+      <option value="1">Time for a surprise attack and to capture them in the confusion.</option>
+      <option value="2">Woohoo, haven't seen this pokemon before.</option>
+      <option value="3">Wow this pokemon looks interesting, let's see how we do in a battle.</option>
+      <option value="4">Might as well try and catch this.</option>
+      <option value="5">Oh a new pokemon, this could be fun.</option>
+    </select>
+
+    <h3>
+      <strong>Question 8</strong>
+    </h3>
+    <h4>If you found an injured pokemon in the wild, what would you do?</h4>
+    <select class="select" id="q8">
+      <option value=""></option>
+      <option value="1">Dropping it off at the hospital, but not wanting any responsibility, so you leave as soon as you know it's been taken in.</option>
+      <option value="2">Take it to the nearest hospital as soon as possible, and stay with it to make sure it recovers well.</option>
+      <option value="3">Hope that it recovers by itself and just walk past it without caring to much for it.</option>
+      <option value="4">Drop it off at the nearest hospital anonymously.</option>
+      <option value="5">Hope it looks a lot cuter when it's back to 100%, and if so you will capture it.</option>
+    </select>
+
+    <h3>
+      <strong>Question 9</strong>
+    </h3>
+    <h4>Honestly, on a scale of 1 to 5, how important is it for you to fill your pokedex and 'catch-em-all'?</h4>
+    <select class="select" id="q9">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 10</strong>
+    </h3>
+    <h4>Which Pokémon Professor would you most want to intern for?</h4>
+    <select class="select" id="q10">
+      <option value=""></option>
+      <option value="1">Professor Oak</option>
+      <option value="2">Professor Elm</option>
+      <option value="3">Professor Birch</option>
+      <option value="4">Professor Rowan</option>
+      <option value="5">Professor Juniper</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+      Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/pokemon">API pokemon List</a> |
+          <a href="https://github.com/kpitts3/pokemonfinder">GitHub Repo</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h2 class="modal-title">
+            <strong>Best Match</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="#" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+
+    // Capture the form inputs
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+      
+      // Form validation
+      function validateForm() {
+        
+        var isValid = true;
+        $(".select").each(function () {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        
+        // Create an object for the user"s input
+        var userInput = {
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        var currentURL = window.location.origin;
+
+        // AJAX to compare the userinput to the pokemon api.
+        $.post(currentURL + "/api/pokemon", userInput, function (data) {
+          
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.pokemonName);
+          $("#match-img").attr("src", data.pokemonImage);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
+</body>
+</html>
